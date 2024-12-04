@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bungee Spice", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    
+    display: flex;
+    justify-content: center;
+    
+    min-height: 100vh;
+    background: black;
+}
+h2 {
+    position: relative;
+    font-size: 6em;
+    color: black;
+}
+
+h2::before {
+    content: attr(data-text);
+    position: absolute;
+    color: rgb(0, 0, 0);
+    width: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: animate 8s linear(0 0%, 0 2.27%, 0.02 4.53%, 0.04 6.8%, 0.06 9.07%,
+     0.1 11.33%, 0.14 13.6%, 0.26 18.89%, 0.39 22.7%, 0.56 27.25%, 0.77 31.8%, 1 36.35%,
+     0.89 40.9%, 0.85 43.18%, 0.81 45.45%, 0.79 47.72%, 0.77 50%, 0.75 52.27%, 0.75 54.55%,
+      0.75 56.82%, 0.77 59.1%, 0.79 61.38%, 0.81 63.65%, 0.85 65.93%, 0.89 68.2%, 1 72.7%,
+       0.97 74.98%, 0.95 77.25%, 0.94 79.53%, 0.94 81.8%, 0.94 84.08%, 0.95 86.35%, 0.97 88.63%,
+        1 90.9%, 0.99 93.18%, 0.98 95.45%, 0.99 97.73%, 1 100%) infinite;
+    filter: drop-shadow(0 0 20px #000000) drop-shadow(0 0 50px #f2ce02);
+}
+
+@keyframes animate {
+    0%,10%,100% {
+        width: 0;
+    }
+    70%,90% {
+        width: 100%;
+    }
+}
+
+
+
+html, body {
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    overflow: hidden;
+    background-image: url(cobrinha.gif);
+    width: 100%;
+    
+    
+    
+}
+
+
+
+.botao{
+
+    display: block; 
+    width: 300px;
+    height: 55px; 
+    margin-right:auto;
+    margin-left:auto;
+    border-radius: 30px;
+    background-color: #000000aa;
+    border: none;
+    font-family: inherit;
+    color: #000000;
+    font-size: 25px;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 40px;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.ceos{
+   
+    font-size: small;
+    border: transparent;
+    background-color: transparent;
+    position: relative;
+    padding: 97px;
+    padding-left: 47%;
+    cursor: pointer;
+}
+
+
+
+#separar {
+    flex-direction: column;
+}
